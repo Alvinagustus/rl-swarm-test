@@ -292,13 +292,13 @@ class HivemindGRPOTrainer:
 
         self.logger.info("Training timed out!")
 
-    def _train(self, dataset):
+    def _train(self):
         if self.node.is_coordinator:
             self.coordinator_train()
         else:
             self.follower_train()
 
-    def train(self, dataset):
+    def train(self):
         try:
             self._train()
         except Exception:
