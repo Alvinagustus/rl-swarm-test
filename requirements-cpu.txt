@@ -7,3 +7,4 @@ tensorboard
 transformers==4.51.3
 trl==0.17.0
 web3
+protobuf==5.29.0
